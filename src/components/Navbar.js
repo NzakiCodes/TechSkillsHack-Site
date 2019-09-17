@@ -4,7 +4,7 @@ const Navbar = (props) => {
     
     return (
         <div className="w3-top">
-            <div className="w3-bar w3-card primary-background">
+            <div className="w3-bar primary-background">
                 <a href="/" className="w3-bar-item w3-button w3-wide">
                     <img src={props.logo} alt="TSH"/>
                 </a>

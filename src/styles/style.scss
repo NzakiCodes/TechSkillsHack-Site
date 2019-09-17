@@ -21,8 +21,8 @@ $star_bg : url('../images/star-bg.svg');
 }
 .header{
     background-color: #24292e;
-background-image: $star_bg,linear-gradient($secondary, $primary 15%);
+background-image: $star_bg,linear-gradient($primary, $primary 15%);
 background-repeat: repeat-x;
 background-position: center 0, 0 0, 0 0;
-height: 500px;
+height: 600px;
 }
