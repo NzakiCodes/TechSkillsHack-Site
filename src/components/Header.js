@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Header() {
+function Header(props) {
+    var img = Math.floor((Math.random()*6)+1);
     return (
-        <div className="header">
-            <h1>Hello</h1>
+        <div className={"paralax paralax"+img}>
+           
         </div>
     )
 }

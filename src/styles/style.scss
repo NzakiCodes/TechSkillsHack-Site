@@ -1,6 +1,11 @@
-$primary:  #350068;
+$primary:  #36006883;
 $secondary: #ffc902;
+$primary-faded: #36006883;
+
 $star_bg : url('../images/star-bg.svg');
+body,html{
+    height: 100%;
+}
 .primary-color{
     color: $primary;
 }
@@ -13,16 +18,46 @@ $star_bg : url('../images/star-bg.svg');
 .secondary-background{
     background-color: $secondary;
 }
-
+.primary-faded{
+    background-color: $primary-faded;
+}
 .ul {
     .li:hover{
         background-color: $secondary;
     }
 }
+.paralax{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+
+}
+.paralax1{
+    background-image: url('../images/bg.jpg');
+}
+.paralax2{
+    background-image: url('../images/bg1.jpg');
+}
+.paralax3{
+    background-image: url('../images/bg2.jpg');
+}
+.paralax4{
+    background-image: url('../images/bg3.jpg');
+}
+.paralax5{
+    background-image: url('../images/bg4.jpg');
+}
+.paralax6{
+    background-image: url('../images/bg5.jpg');
+}
 .header{
     background-color: #24292e;
-background-image: $star_bg,linear-gradient($primary, $primary 15%);
-background-repeat: repeat-x;
+// background-image: $star_bg,linear-gradient($primary, $primary 15%);
+background-image: url('../images/bg8.jpg');
+background-repeat: no-repeat;
 background-position: center 0, 0 0, 0 0;
+background-size: cover;
 height: 600px;
 }
