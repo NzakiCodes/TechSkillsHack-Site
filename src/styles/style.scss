@@ -1,10 +1,28 @@
 $primary:  #36006883;
 $secondary: #ffc902;
-$primary-faded: #36006883;
+$primary-faded: #000000c7;
 
 $star_bg : url('../images/star-bg.svg');
 body,html{
     height: 100%;
+    line-height: 1.8;
+    background-color: #525252;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+.tsh-nav-border{
+    // border-bottom: 3px solid #fff;
+    // background-color: #fff;
+    background: linear-gradient(to right, rgba(0,0,0,0.0) 17%, #ffc902 76%);
+    width: 100%;
+    height: 6px;
+    // transform: skew(70deg)
+}
+.header-txt1{
+    font-size: 50px;
+    font-family: 'Big Shoulders Display', cursive!important;
+    font-weight: bold;
+
 }
 .primary-color{
     color: $primary;
@@ -31,26 +49,26 @@ body,html{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 650px;
 
 }
 .paralax1{
-    background-image: url('../images/bg.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg.jpg');
 }
 .paralax2{
-    background-image: url('../images/bg1.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg1.jpg');
 }
 .paralax3{
-    background-image: url('../images/bg2.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg2.jpg');
 }
 .paralax4{
-    background-image: url('../images/bg3.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg7.jpg');
 }
 .paralax5{
-    background-image: url('../images/bg4.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg4.jpg');
 }
 .paralax6{
-    background-image: url('../images/bg5.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg6.jpg');
 }
 .header{
     background-color: #24292e;
@@ -60,4 +78,60 @@ background-repeat: no-repeat;
 background-position: center 0, 0 0, 0 0;
 background-size: cover;
 height: 600px;
+}
+// .anime1{
+
+// }
+// @keyframes showslow{
+//     0%{
+        
+//     }
+// }   
+#classy-learn{
+    background-image: url("../images/learn-2001847_1920.jpg");
+    height: 300px;
+}
+.aboutsect{
+    padding:128px 16px!important;
+    position: relative;
+    color:white;
+}
+#aboutsectch{
+    display: none;
+}
+.tsh-anim-up{
+    transform: scale(1);
+    transition: 0.3s;
+    position: relative;
+    opacity: 0;
+    // display: none;
+}
+.tsh-anim-up:hover{
+    transform: scale(2);
+    transition: 0.3s;
+}
+
+.tsh-abs1{
+
+ animation: anim1-display-menus 1s  forwards;
+ 
+}
+.tsh-abs2{
+
+    animation: anim1-display-menus 1s 0.3s forwards;
+    
+   }
+   .tsh-abs3{
+
+    animation: anim1-display-menus 1s 0.5s forwards;
+    
+   }
+   .tsh-abs4{
+   
+       animation: anim1-display-menus 1s 0.9s forwards;
+       
+      }
+      @keyframes anim1-display-menus{from{bottom:-200px;opacity:0;transform: scale(0);
+        } to{bottom:0;opacity:1;transform: scale(1);
+        }
 }
