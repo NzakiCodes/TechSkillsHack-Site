@@ -1,12 +1,13 @@
-$primary:  #36006883;
+$primary:  #360068;
 $secondary: #ffc902;
-$primary-faded: #000000c7;
+$primary-faded: #36006883;
 
 $star_bg : url('../images/star-bg.svg');
 body,html{
     height: 100%;
     line-height: 1.8;
-    background-color: #525252;
+    // background-color: #525252;
+    scroll-behavior: smooth;
 }
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -49,7 +50,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 700px;
 
 }
 .paralax1{
@@ -69,6 +70,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 }
 .paralax6{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg6.jpg');
+}.paralax7{
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/790e8fc660cbf96eb7581ea14608f240.jpg');
 }
 .header{
     background-color: #24292e;
@@ -91,10 +94,11 @@ height: 600px;
     background-image: url("../images/learn-2001847_1920.jpg");
     height: 300px;
 }
-.aboutsect{
+.tsh-aboutsect{
     padding:128px 16px!important;
     position: relative;
     color:white;
+    background-color: $primary;
 }
 #aboutsectch{
     display: none;
@@ -134,4 +138,31 @@ height: 600px;
       @keyframes anim1-display-menus{from{bottom:-200px;opacity:0;transform: scale(0);
         } to{bottom:0;opacity:1;transform: scale(1);
         }
+}
+.iconstxt{
+    color: #efefef;
+}
+.tsh-trans-black{
+    background-color: rgba(0, 0, 0, 0.014);
+}
+.tsh-trans-primary{
+    background-color: #36006883;
+}
+.tsh-logond{
+    width: 200px;
+}
+#logond,#main-head,.tsh-disapear,.tsh-hide{
+    transition: 0.5s;
+}
+.tsh-padding-left-16{
+    padding-left: 16px!important;
+}
+.tsh-hide{
+    display: none;
+}
+.tsh-disapear{
+    opacity: 0;
+}
+.tsh-primary{
+    background-color: #360068;
 }
