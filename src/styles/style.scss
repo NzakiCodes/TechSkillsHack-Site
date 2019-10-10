@@ -1,6 +1,6 @@
-$primary:  #360068;
+$primary:  #2c3e50;
 $secondary: #ffc902;
-$primary-faded: #36006883;
+$primary-faded: #2c3e50e1;
 
 $star_bg : url('../images/star-bg.svg');
 body,html{
@@ -26,16 +26,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 }
 .primary-color{
-    color: $primary;
+    color: $primary!important;
 }
 .primary-background{
-    background-color: $primary;
+    background-color: $primary!important;
 }
 .secondary-color{
-    color: $secondary;
+    color: $secondary!important;
 }
-.secondary-background{
-    background-color: $secondary;
+.secondary-background,.secondary-background-hover:hover{
+    background-color: $secondary!important;
 }
 .primary-faded{
     background-color: $primary-faded;
@@ -44,6 +44,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     .li:hover{
         background-color: $secondary;
     }
+}
+.about-paralax{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg8.jpg');
 }
 .paralax{
     background-size: cover;
@@ -97,11 +105,13 @@ height: 600px;
 .tsh-aboutsect{
     padding:128px 16px!important;
     position: relative;
-    color:white;
-    background-color: $primary;
+    background-color: #fff;
+}
+.tsh-aboutsect, .tsh-aboutsect i{
+    color: $primary;
 }
 #aboutsectch{
-    display: none;
+    // display: none;
 }
 .tsh-anim-up{
     transform: scale(1);
@@ -146,13 +156,13 @@ height: 600px;
     background-color: rgba(0, 0, 0, 0.014);
 }
 .tsh-trans-primary{
-    background-color: #36006883;
+    background-color: $primary;
 }
 .tsh-logond{
-    width: 200px;
+    width: 90px;
 }
 #logond,#main-head,.tsh-disapear,.tsh-hide{
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .tsh-padding-left-16{
     padding-left: 16px!important;
@@ -164,5 +174,44 @@ height: 600px;
     opacity: 0;
 }
 .tsh-primary{
-    background-color: #360068;
+    background-color: $primary;
+}
+.tsh-nav-ext{
+    height: 100%;
+    padding: 50px;
+}
+.tsh-nav-main{
+    height: 58px;
+    
+    padding: 6.5px 48px!important;
+    transition: 0.5s!important;
+}
+.tsh-ivc{
+    color: transparent!important;
+    // opacity: 0;
+    // width:100%!important;
+}
+.tsh-bgimg{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/bg2.jpg");
+    height: 700px;
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.w3-bold{
+    font-weight: bold!important;
+}
+.tsh-trans-btn{
+    background-color:rgba(255,255,255,0.9)!important;
+}
+.tsh-btn{
+    line-height: 1.8!important;
+    vertical-align: middle!important;
+    margin: 5px!important;
+    text-transform: capitalize!important;
+
+
 }
