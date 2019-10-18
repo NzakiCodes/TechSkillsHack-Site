@@ -20,7 +20,7 @@ function IconCard(props) {
             break;
     }
     if(props.line===true){
-        var HR = (<hr/>);
+        var HR = (<hr className="tsh-hr-finest"/>);
     }
     return (
         <div className="w3-hover-shadow ">

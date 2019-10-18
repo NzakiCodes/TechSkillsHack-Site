@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillsSect from './SkillsSect'
 // import AboutSect from './AboutSect'
 
 function Learn() {
@@ -10,12 +11,13 @@ function Learn() {
                    <span className="w3-xxlarge w3-padding-48 w3-margin-top w3-hide-large w3-hide-medium  w3-bold w3-wide w3-animate-right">About Tech Skills Hack</span>
                 </div>
         </header>
-        <div className="w3-container  w3-padding-48 w3-center w3-bold">
-            <h2 className="w3-container">Choose what to Learn</h2>
+        <div className="w3-center w3-bold">
+            {/* <h2 className="w3-container">Choose what to Learn</h2>
             <p className="w3-large w3-container">
            
             </p>
-            <hr/>
+            <hr/> */}
+            <SkillsSect header2/>
         </div>
        
        </div>

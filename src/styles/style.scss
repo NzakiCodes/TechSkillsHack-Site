@@ -1,6 +1,6 @@
-$primary:  #2c3e50;
+$primary:  #350068;
 $secondary: #ffc902;
-$primary-faded: #2c3e50e1;
+$primary-faded: #360068d3;
 
 $star_bg : url('../images/star-bg.svg');
 body,html{
@@ -25,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     font-weight: bold;
 
 }
-.primary-color{
+.tsh-primary-text,.tsh-primary-color,.primary-color{
     color: $primary!important;
 }
 .primary-background{
@@ -58,28 +58,35 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+   
 
 }
 .paralax1{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg.jpg');
+    height: 700px;
 }
 .paralax2{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg1.jpg');
+    height: 700px;
 }
 .paralax3{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg2.jpg');
+    height: 700px;
 }
 .paralax4{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg7.jpg');
+    height: 700px;
 }
 .paralax5{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg4.jpg');
+    height: 400px;
 }
 .paralax6{
-    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg6.jpg');
+    background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/bg2.jpg');
+    height: 700px;
 }.paralax7{
     background-image:linear-gradient($primary-faded, $primary-faded 15%), url('../images/790e8fc660cbf96eb7581ea14608f240.jpg');
+    height: 700px;
 }
 .header{
     background-color: #24292e;
@@ -110,9 +117,9 @@ height: 600px;
 .tsh-aboutsect, .tsh-aboutsect i{
     color: $primary;
 }
-#aboutsectch{
-    // display: none;
-}
+// #aboutsectch{
+//     // display: none;
+// }
 .tsh-anim-up{
     transform: scale(1);
     transition: 0.3s;
@@ -214,4 +221,37 @@ height: 600px;
     text-transform: capitalize!important;
 
 
+}
+.hr,.hr2{
+    color:$primary!important;
+    background: $primary!important;
+    height:1px!important;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px 
+}
+
+.hr2{
+    margin-bottom: 20px;
+}
+.tsh-hr-finest{
+    background: $primary!important;
+    height:0.1vh!important;
+    margin: 25px 10px!important;
+    // box-shadow: 0px 5px 0.5px rgba(219, 200, 28, 0.4)!important;
+}
+.tsh-overflow{
+    text-overflow: "____" !important;
+    transition: 0.3s;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+// .tsh-overflow:hover{
+  
+// }
+.tsh-hi:hover .tsh-overflow{
+    font-size: 20px;
+    transition: 0.3s;
 }

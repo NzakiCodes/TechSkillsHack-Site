@@ -7,9 +7,13 @@ const Navbar = (props) => {
         <div>
             <div id="navb" className="w3-top">
                 <div id="main-head" className=" w3-bar tsh-nav-ext">
-                    <a href="/" className="w3-bar-item w3-left w3-wide w3-center">
+                   <Link to="/">
+                     <span className="w3-bar-item w3-left w3-wide w3-center">
                         <img src={props.logo2} alt="TSH" id="logond" className="tsh-logond "/>
-                    </a>
+                    </span>
+                   </Link>
+                   
+
                         <div className="w3-right">
                             <BtnLink class="w3-hide-small" to={"home"} icon={"home"}/>
                             <BtnLink class="w3-hide-small" to={"contact"} icon={"phone"}/> 
@@ -20,7 +24,7 @@ const Navbar = (props) => {
                         </div>
                     </div>
                 
-                <div className=" tsh-nav-border tsh-disapear"></div>
+                <div className="tsh-nav-border tsh-disapear"></div>
             </div>
         </div>
     )

@@ -10,12 +10,17 @@ function About() {
                    <span className="w3-xxlarge w3-padding-48 w3-margin-top w3-hide-large w3-hide-medium  w3-bold w3-wide w3-animate-right">About Tech Skills Hack</span>
                 </div>
         </header>
-        <div className="w3-container  w3-padding-48 w3-center w3-bold">
-            <h2 className="w3-container">What is Tech Skills Hack</h2>
+        <span className="w3-center">
+                <hr className="hr2"/>
+           </span>
+        <div className="w3-container  w3-padding-48 w3-center ">
+            <h2 className="w3-container w3-bold w3-margin-top">What is Tech Skills Hack</h2>
             <p className="w3-large w3-container">
-            Tech Skills Hack is a community dedicated to getting people equipped and ready with the right technical and digital skills for a world that's getting globally digitalized daily.
+            Tech Skills Hack is a community dedicated to getting people equipped and ready with the right technical and digital skills <br/> for a world that's getting globally digitalized daily.
             </p>
-            <hr/>
+           <span className="w3-center">
+                <hr className="hr"/>
+           </span>
         </div>
         <AboutSect/>
        </div>

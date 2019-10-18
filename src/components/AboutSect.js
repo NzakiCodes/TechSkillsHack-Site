@@ -15,7 +15,7 @@ function AboutSect(props) {
     return (
         <div id="about">
             <div className=" tsh-aboutsect w3-container w3-padding-64">
-            <h3 className="w3-center w3-animate-left">What We Strive Todo</h3>
+            <h1 className="w3-center w3-animate-left">What We Strive To Do</h1>
             <p className="w3-large w3-center w3-animate-right"></p>
             <div className="w3-row-padding w3-center " id="aboutsectch" style={{marginTop: 64 +'px'}}>
             <div className="w3-col l1 tsh-ivc"> .</div>
