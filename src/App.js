@@ -16,6 +16,7 @@ import Learn from './components/Learn';
 
 function App() {
     const [logo, setlogo] = useState(BigLogou);
+    const [navIconColor,setNIC] = useState('tsh-primary-text');
     document.title = "Tech Skills Hack";
     const scrollTo = (size)=>{
         const navlogo = document.getElementById('logond');
@@ -32,6 +33,7 @@ function App() {
             tsh_nav_border.style.opacity = 1;
             tsh_nav_border.style.display = "block";
             setlogo(BigLogo);
+            setNIC('w3-text-white');
 
         }else{
             navlogo.style.width = "90px";
@@ -40,6 +42,7 @@ function App() {
             main_head.classList.replace("tsh-nav-main","tsh-nav-ext");
             tsh_nav_border.style.opacity = 0;
             setlogo(BigLogou);
+            setNIC('tsh-primary-text');
 
         }
         // if (document.body.scrollTop > size || document.documentElement.scrollTop > size) {
@@ -57,7 +60,7 @@ function App() {
     return (
         <Router>
             <div>
-            <Navbar logo={Logou} logo2={logo}/>
+            <Navbar logo={Logou} logo2={logo} navIconColor={navIconColor}/>
             <Switch>
                 <Route  path="/" exact component={Home}/>
                 <Route  path="/home" exact component={Home}/>

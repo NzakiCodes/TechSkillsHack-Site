@@ -1,7 +1,18 @@
 var express = require('express'),
+cors = require('require'),
 app = express(),
+bodyParser = require('body-parser'),
 port = process.env.PORT || 2000;
 
-app.listen(port);
+app.use(bodyParser.json());
+app.use(cors());
+app.use(bodyParser.urlencoded({extended:false}));
 
-console.log('todo list RESTful API server started on: ' + port);
+var Users = require('./routes/Users');
+
+app.use('/users',Users);
+
+
+app.listen(port, () => {
+    console.log(`This Server is Running on Pearl ${port}`);
+});

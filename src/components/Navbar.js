@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/style.scss';
 import { Link } from 'react-router-dom';
 const Navbar = (props) => {
-    
+    // console.log(props);
     return (
         <div>
             <div id="navb" className="w3-top">
@@ -15,10 +15,10 @@ const Navbar = (props) => {
                    
 
                         <div className="w3-right">
-                            <BtnLink class="w3-hide-small" to={"home"} icon={"home"}/>
-                            <BtnLink class="w3-hide-small" to={"contact"} icon={"phone"}/> 
-                            <BtnLink class="w3-hide-small" to={"learn"} icon={"book"}/>
-                            <BtnLink to={"apps"} class={"w3-hide-large"} icon={"apps"}/>
+                            <BtnLink class="w3-hide-small" to={"home"} navIconColor={props.NavIconColor}  icon={"home"}/>
+                            <BtnLink class="w3-hide-small" to={"contact"} navIconColor={props.NavIconColor}  icon={"phone"}/> 
+                            <BtnLink class="w3-hide-small" to={"learn"} navIconColor={props.NavIconColor}  icon={"book"}/>
+                            <BtnLink to={"apps"} class={"w3-hide-large"} navIconColor={props.NavIconColor} icon={"apps"}/>
                            
                             
                         </div>
@@ -32,10 +32,11 @@ const Navbar = (props) => {
 
 
 function BtnLink(props) {
+    console.log(props);
     return (
         <Link to={`/${props.to}`}>
             <span className={`w3-bar-item ${props.class}`}>
-               <i className="material-icons w3-text-white fa-2x">{props.icon}</i>
+               <i className={`material-icons fa-2x ${props.NavIconColor}`}>{props.icon}</i>
             </span>
         </Link>
             
